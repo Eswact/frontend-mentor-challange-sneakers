@@ -1,0 +1,955 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol,
+ul {
+list-style: none;
+}
+blockquote,
+q {
+quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/* reset css */
+
+body{
+    padding: 0px 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav{
+    padding: 22.5px;
+    height: 45px;
+    width: 100%;
+}
+
+.menu{
+    visibility: hidden;
+}
+
+.flx{
+    display: flex;
+    flex-direction: row;
+}
+
+.flx1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
+}
+
+.flx2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.flx2 li a{
+    text-decoration: none;
+    color: #888;
+}
+
+.flx2 li a:hover{
+    color: #FF7D1B;
+}
+
+.flx3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.spc{
+    width: 50%;
+}
+
+#cart{
+    width: auto;
+    height: 24px;
+    align-self: center;
+    transition: all 200ms ease-in-out;
+}
+
+#avatar{
+    width: auto;
+    height: 54px;
+    align-self: center;
+    transition: all 200ms ease-in-out;
+}
+
+ol li{
+    color: #888;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+hr{
+    height: 1px;
+    border: none;
+    background-color: #ddd;
+}
+
+.flx4{
+    display: flex;
+    flex-direction: row;
+}
+
+.flxc{
+    display: flex;
+    flex-direction: column;
+}
+
+#bigimg{
+    height: 550px;
+    margin: 80px 80px 10px 80px;
+}
+
+#img1{
+    position: absolute;
+    height: 550px;
+    width: auto;
+    border-radius: 24px;
+}
+
+.im1{
+    visibility: hidden;
+}
+
+.im1.visib{
+    visibility: visible;
+}
+
+#img2{
+    position: absolute;
+    height: 550px;
+    width: auto;
+    border-radius: 24px;
+}
+
+.im2{
+    visibility: hidden;
+}
+
+.im2.visib{
+    visibility: visible;
+}
+
+#img3{
+    position: absolute;
+    height: 550px;
+    width: auto;
+    border-radius: 24px;
+}
+
+.im3{
+    visibility: hidden;
+}
+
+.im3.visib{
+    visibility: visible;
+}
+
+#img4{
+    position: absolute;
+    height: 550px;
+    width: auto;
+    border-radius: 24px;
+}
+
+.im4{
+    visibility: hidden;
+}
+
+.im4.visib{
+    visibility: visible;
+}
+
+.sims{
+    border: 4px solid #FF7D1B;
+    opacity: 0.5;
+}
+
+.flx5{
+    margin-top: 26px;
+    margin-left: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 580px;
+}
+
+.flx6{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.flx7{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.wid{
+    width: 116px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.wid:hover{
+    opacity: 0.6;
+}
+
+.pad{
+    padding: 9% 10%;
+}
+
+h2{
+    color: #FF7D1B;
+    font-weight: bolder;
+    font-size: large;
+    margin: 24px 0;
+}
+
+h1{
+    font-size: 57px;
+    font-weight: bolder;
+    margin-bottom: 48px;
+}
+
+h3{
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+.mainp{
+    font-size: 18px;
+    color: #888;
+    line-height: 28px;
+    margin-bottom: 28px;
+}
+
+.indirim{
+    padding: 6px 8px;
+    align-self: center;
+    color: #FF7D1B;
+    background-color: #ff7e1b36;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.eski{
+    color: #AAA;
+    text-decoration: line-through;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: large;
+}
+
+.sayac{
+    padding: 22px 4px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 160px;
+}
+
+.say{
+    font-size: larger;
+    font-weight: 500;
+}
+
+span{
+    padding: 0 18px;
+}
+
+.imargin{
+    margin-right: 28px;
+}
+
+.but{
+    font-size: 20px;
+    color: white;
+    background-color: #FF7D1B;
+    box-shadow: 2px 4px 4px 4px rgba(255, 126, 27, 0.37);
+    border: 1px solid rgba(255, 126, 27, 0.37);
+    border-radius: 15px;
+    width: 350px;
+    height: auto;
+    align-items: center;
+}
+
+.but:hover{
+    animation: but-dolas 0.5s forwards ease-in-out;
+}
+
+.ae{
+    width: 15px;
+    transition: all 200ms ease-in-out;
+}
+
+.ae:hover{
+    transform: scale(1.1);
+}
+
+#cart:hover{
+    transform: scale(1.1);
+}
+
+#avatar:hover{
+    transform: scale(1.1);
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 145px;
+    top: 105px;
+    z-index: 1;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 400ms ease-in-out;
+    border: 1px solid rgba(136, 136, 136, 0.37);
+    border-radius: 15px;
+    padding: 28px;
+    visibility: hidden;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.37);
+}
+
+.profile a{
+    text-decoration: none;
+    color: #888;
+    padding-top: 20px;
+    font-size: 18px;
+    transition: all 200ms ease-in-out;
+}
+
+.profile a:hover{
+    transform: scale(1.037);
+    color: #FF7D1B;
+}
+
+.profile.open-menu {
+    max-height: 300px;
+    visibility: visible;
+}
+
+.cart{
+    position: absolute;
+    right: 255px;
+    top: 105px;
+    z-index: 1;
+    max-height: 0px;
+    min-width: 200px;
+    overflow: hidden;
+    transition: max-height 400ms ease-in-out;
+    border: 1px solid rgba(136, 136, 136, 0.37);
+    border-radius: 15px;
+    padding: 28px;
+    visibility: hidden;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.37);
+    color: #888;
+    font-size: 18px;
+}
+
+.cart.open-menu2 {
+    max-height: 300px;
+    visibility: visible;
+}
+
+.proimg{
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.usname{
+    color: #888;
+    align-self: center;
+    font-size: 20px;
+}
+
+.prohr{
+    width: 100%;
+    background-color: #888;
+}
+
+.fa-solid{
+    margin-right: 15px;
+}
+
+.logo{
+    padding-bottom: 10px;
+}
+
+.sayi{
+    position: absolute;
+    top: 20px;
+    right: 14%;
+    color: white;
+    background-color: #FF7D1B;
+    border-radius: 50%;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.sayi.vis{
+    visibility: visible;
+}
+
+#sepimg{
+    width: 80px;
+    height: 80px;
+    padding-right: 20px;
+}
+
+.flxcs{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-right: 20px;
+    gap: 10px;
+}
+
+.flxcs span{
+    font-weight: 500;
+    color: black;
+}
+
+#cop{
+    width: 22px;
+    height: 22px;
+    align-self: center;
+}
+
+#cop:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite; 
+}
+
+#yanMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 105vh;
+    background-color: #FFF;
+    z-index: 1;
+    max-width: 0px;
+    visibility: hidden;
+    opacity: 1;
+    transition: padding 125ms ease-in-out;
+}
+
+#yanMenu.ac{
+    visibility: visible;
+    padding: 0 125px;
+}
+
+#yanMenu ol{
+    line-height: 50px;
+}
+
+#yanMenu ol a{
+    text-decoration: none;
+    color: #FF7D1B;
+}
+
+.back{
+    padding: 20px;
+    margin-top: -450px;
+    margin-bottom: 200px;
+    margin-right: 200px;
+}
+
+#abc.op{
+    opacity: 0.37;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes but-dolas {
+    33%{
+        transform: translateX(30px);
+    }
+    66% {
+        transform: translateX(-30px);
+    }
+    99%{
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    
+    body{
+        padding: 0 5%;
+    }   
+
+    .sayac{
+        width: 120px;
+        padding: 10px;
+    }
+
+    span{
+        padding: 0px 11.5px;
+    }
+
+    .sayi{
+        right: 10%;        
+    }
+
+}
+
+@media screen and (max-width: 1350px) {
+    
+    body{
+        padding: 0;
+    }
+
+    .pad{
+        padding: 12% 4%;
+    }
+
+    .sayac{
+        width: 120px;
+        padding: 10px;
+    }
+
+    span{
+        padding: 0px 11.5px;
+    }
+
+    .but{
+        width: 300px;
+    }
+
+    .flx3{
+        margin-right: 100px;
+    }
+
+    .sayi{
+        right: 14%;        
+    }
+
+}
+
+@media screen and (max-width: 1170px) {
+    
+    body{
+        padding: 0;
+    }
+
+    .pad{
+        padding: 12% 2%;
+    }
+
+    .sayac{
+        width: 120px;
+        padding: 10px;
+    }
+
+    span{
+        padding: 0px 8px;
+    }
+
+    .but{
+        width: 300px;
+    }
+
+    .flx3{
+        margin-right: 100px;
+    }
+
+    #bigimg{
+        margin: 30px;
+    }
+
+    .flx5{
+        margin-left: 16px;
+    }
+
+    .sayi{
+        right: 15%;
+        top: 20px;        
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    
+    body{
+        padding: 0;
+    }
+
+    #img1{
+        height: 55%;
+        width: 72%;
+    }
+
+    nav{
+        padding: 10px 2px;
+        height: 45px;
+        width: 100%;
+    }
+
+    .flx{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .flxm{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .logo{
+        margin-left: 24px;
+    }
+
+    .menu{
+        margin-left: 10px;
+        width: 24px;
+        height: 20px;
+        visibility: visible;
+    }
+
+    .flx4{
+        flex-direction: column;
+    }
+
+    .flxc{
+        flex-direction: row;
+    }
+
+    .flxc2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .indirim{
+        margin-top: -25px;
+    }
+
+    .eski{
+        padding-top: 8px;
+    }
+
+    .flx5{
+        position: absolute;
+        left: 80%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flx2{
+        visibility: hidden;
+    }
+
+    .flx3{
+        display: flex;
+        flex-direction: row;
+        gap: 37px;
+    }
+
+    .pad{
+        padding: 2% 4%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sayac{
+        width: 120px;
+        padding: 10px;
+    }
+
+    span{
+        padding: 0px 8px;
+    }
+
+    .but{
+        width: 300px;
+    }
+
+    .flx3{
+        position: absolute;
+        left: 82%;
+    }
+
+    #bigimg{
+        height: 550px;
+        margin: 12px;
+    }
+
+    .flx5{
+        margin-left: 0;
+    }
+
+    .flx7{
+        justify-content: center;
+    }
+
+    .sayi{
+        right: 70%;
+        top: auto;      
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    body{
+        padding: 0;
+    }
+
+    #img1{
+        height: 50%;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    nav{
+        padding: 10px 2px;
+        height: 45px;
+        width: 100%;
+    }
+
+    .flx{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .flxm{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .logo{
+        margin-left: 24px;
+    }
+
+    .menu{
+        width: 28px;
+        height: 26px;
+        visibility: visible;
+    }
+
+    .flx4{
+        flex-direction: column;
+    }
+
+    .flxc{
+        flex-direction: row;
+        height: 450px;
+    }
+
+    .flxc2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .indirim{
+        margin-top: -25px;
+    }
+
+    .eski{
+        padding-top: 8px;
+    }
+
+    .flx5{
+        visibility: hidden;
+    }
+
+    .flx2{
+        visibility: hidden;
+    }
+
+    .flx3{
+        display: flex;
+        flex-direction: row;
+        gap: 37px;
+    }
+
+    .pad{
+        padding: 2% 4%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sayac{
+        width: 120px;
+        padding: 10px;
+    }
+
+    span{
+        padding: 0px 8px;
+    }
+
+    .but{
+        width: 300px;
+    }
+
+    .flx3{
+        position: absolute;
+        left: 75%;
+    }
+
+    #bigimg{
+        margin: 0;
+        padding: 0;
+    }
+
+    .flx5{
+        margin-left: 0;
+    }
+
+    .flx7{
+        justify-content: center;
+    }
+
+}
