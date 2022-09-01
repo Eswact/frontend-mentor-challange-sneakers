@@ -431,6 +431,7 @@ span{
     padding: 28px;
     visibility: hidden;
     box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.37);
+    background-color: white;
 }
 
 .profile a{
@@ -467,6 +468,7 @@ span{
     box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.37);
     color: #888;
     font-size: 18px;
+    background-color: white;
 }
 
 .cart.open-menu2 {
@@ -636,6 +638,16 @@ span{
         right: 10%;        
     }
 
+    .profile{
+        top: 85px;
+        right: 15px;
+    }
+
+    .cart{
+        top: 85px;
+        right: 50px;
+    }
+
 }
 
 @media screen and (max-width: 1350px) {
@@ -667,6 +679,16 @@ span{
 
     .sayi{
         right: 14%;        
+    }
+
+    .profile{
+        top: 85px;
+        right: 5px;
+    }
+
+    .cart{
+        top: 85px;
+        right: 25px;
     }
 
 }
@@ -709,6 +731,16 @@ span{
     .sayi{
         right: 15%;
         top: 20px;        
+    }
+
+    .profile{
+        top: 75px;
+        right: 5px;
+    }
+
+    .cart{
+        top: 75px;
+        right: 25px;
     }
 
 }
@@ -834,6 +866,16 @@ span{
         right: 70%;
         top: auto;      
     }
+
+    .profile{
+        top: 65px;
+        right: 5px;
+    }
+
+    .cart{
+        top: 65px;
+        right: 25px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -950,6 +992,16 @@ span{
 
     .flx7{
         justify-content: center;
+    }
+
+    .profile{
+        top: 65px;
+        right: 5px;
+    }
+
+    .cart{
+        top: 65px;
+        right: 5px;
     }
 
 }
