@@ -559,7 +559,7 @@ span{
     top: 0;
     left: 0;
     width: auto;
-    height: 105vh;
+    height: 120%;
     background-color: #FFF;
     z-index: 1;
     max-width: 0px;
@@ -584,8 +584,8 @@ span{
 
 .back{
     padding: 20px;
-    margin-top: -450px;
-    margin-bottom: 200px;
+    margin-top: -400px;
+    margin-bottom: 180px;
     margin-right: 200px;
 }
 
@@ -743,17 +743,17 @@ span{
         right: 25px;
     }
 
+    #avatar{
+        width: auto;
+        height: 34px;
+    }
+
 }
 
 @media screen and (max-width: 1100px) {
     
     body{
         padding: 0;
-    }
-
-    #img1{
-        height: 55%;
-        width: 72%;
     }
 
     nav{
@@ -876,12 +876,180 @@ span{
         top: 65px;
         right: 25px;
     }
+
+    #avatar{
+        width: auto;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    body{
+        padding: 0;
+    }
+
+    nav{
+        padding: 10px 2px;
+        height: 45px;
+        width: 100%;
+    }
+
+    .flx{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .flxm{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .logo{
+        margin-left: 20px;
+        margin-top: 8px;
+        height: 18px;
+        width: auto;
+    }
+
+    .menu{
+        width: 18px;
+        height: 16px;
+        margin-top: 11px;
+        visibility: visible;
+    }
+
+    .flx4{
+        flex-direction: column;
+    }
+
+    .flxc{
+        flex-direction: row;
+    }
+
+    .flxc2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .indirim{
+        margin-top: -25px;
+    }
+
+    .eski{
+        padding-top: 8px;
+    }
+
+    .flx5{
+        position: absolute;
+        left: 80%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flx2{
+        visibility: hidden;
+    }
+
+    .flx3{
+        display: flex;
+        flex-direction: row;
+        gap: 37px;
+    }
+
+    .pad{
+        padding: 2% 4%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sayac{
+        width: 120px;
+        padding: 10px;
+    }
+
+    span{
+        padding: 0px 8px;
+    }
+
+    .but{
+        width: 300px;
+    }
+
+    .flx3{
+        position: absolute;
+        left: 82%;
+        padding-top: 6px;
+    }
+
+    .flx5{
+        margin-left: 0;
+    }
+
+    .flx7{
+        justify-content: center;
+    }
+
+    .sayi{
+        right: 70%;
+        top: auto;      
+    }
+
+    .cart{
+        top: 65px;
+        right: 5px;
+    }
+
+    #avatar{
+        width: auto;
+        height: 34px;
+    }
+
+    #avatar{
+        width: auto;
+        height: 30px;
+    }
+
+    #yanMenu{
+        height: 150%;
+    }
+
+    .back{
+        padding: 20px;
+        margin-top: -600px;
+        margin-bottom: 200px;
+        margin-right: 200px;
+    }
+
+    .flx7{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sayac{
+        padding: 12px 0px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        width: 500px;
+    }
+    
+    .but{
+        width: 500px;
+        height: 50px;
+    }
 }
 
 @media screen and (max-width: 650px) {
     
     body{
         padding: 0;
+        margin: 0;
     }
 
     #img1{
@@ -910,12 +1078,16 @@ span{
     }
 
     .logo{
-        margin-left: 24px;
+        margin-left: 14px;
+        margin-top: 8px;
+        height: 16px;
+        width: auto;
     }
 
     .menu{
-        width: 28px;
-        height: 26px;
+        width: 16px;
+        height: 14px;
+        margin-top: 10px;
         visibility: visible;
     }
 
@@ -963,22 +1135,14 @@ span{
         align-items: center;
     }
 
-    .sayac{
-        width: 120px;
-        padding: 10px;
-    }
-
     span{
         padding: 0px 8px;
     }
 
-    .but{
-        width: 300px;
-    }
-
     .flx3{
         position: absolute;
-        left: 75%;
+        left: 70%;
+        padding-top: 5px;
     }
 
     #bigimg{
@@ -1002,6 +1166,37 @@ span{
     .cart{
         top: 65px;
         right: 5px;
+    }
+
+    #avatar{
+        width: auto;
+        height: 32px;
+    }
+
+    .back{
+        padding: 20px;
+        margin-top: -350px;
+        margin-bottom: 100px;
+        margin-right: 200px;
+    }
+
+    .flx7{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sayac{
+        padding: 12px 0px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        width: 300px;
+    }
+    
+    .but{
+        width: 300px;
+        height: 50px;
     }
 
 }
