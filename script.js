@@ -144,13 +144,13 @@ function resimgec(){
     if(gecsay==0){
         im1v();
     }
-    else if(gecsay==1 || gecsay==-1){
+    else if(gecsay==1 || gecsay==-3){
         im2v();
     }
     else if(gecsay==2 || gecsay==-2){
         im3v();         
     }
-    else if(gecsay==3 || gecsay==-3){
+    else if(gecsay==3 || gecsay==-1){
         im4v();      
     }
 }
