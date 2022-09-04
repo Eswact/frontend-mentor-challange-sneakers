@@ -858,8 +858,25 @@ span{
     }
 
     #bigimg{
+        width: 70%;
         height: 550px;
         margin: 12px;
+    }
+
+    #img1{
+        width: 70%;
+    }
+
+    #img2{
+        width: 70%;
+    }
+
+    #img3{
+        width: 70%;
+    }
+
+    #img4{
+        width: 70%;
     }
 
     .flx5{
@@ -1053,7 +1070,7 @@ span{
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     
     body{
         padding: 0;
