@@ -117,3 +117,40 @@ function menuac(){
     menuYan.classList.toggle("ac");
     badi.classList.toggle("op");
 }
+
+var gecsay = 0;
+
+function saggecis(){
+    if(gecsay==3){
+        gecsay=0;
+    }
+    else{
+        gecsay ++;
+    }
+    resimgec();
+}
+
+function solgecis(){
+    if(gecsay==-3){
+        gecsay=0;
+    }
+    else{
+        gecsay --;
+    }
+    resimgec();
+}
+
+function resimgec(){
+    if(gecsay==0){
+        im1v();
+    }
+    else if(gecsay==1 || gecsay==-1){
+        im2v();
+    }
+    else if(gecsay==2 || gecsay==-2){
+        im3v();         
+    }
+    else if(gecsay==3 || gecsay==-3){
+        im4v();      
+    }
+}

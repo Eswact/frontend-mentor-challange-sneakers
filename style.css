@@ -593,6 +593,14 @@ span{
     opacity: 0.37;
 }
 
+#sag{
+    visibility: hidden;
+}
+
+#sol{
+    visibility: hidden;
+}
+
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -1197,6 +1205,29 @@ span{
     .but{
         width: 300px;
         height: 50px;
+    }
+
+    #sag{
+        visibility: visible;
+        position: absolute;
+        top: 250px;
+        right: 5px;
+    }
+
+    #sol{
+        visibility: visible;
+        position: absolute;
+        top: 250px;
+        left: 5px;
+    }
+
+    .ok{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        text-align: center;
+        padding: 15px;
     }
 
 }
