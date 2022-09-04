@@ -141,6 +141,7 @@ nav{
 .flx{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .flx1{
@@ -821,6 +822,7 @@ span{
         left: 80%;
         flex-direction: column;
         gap: 20px;
+        width: 100px;
     }
 
     .flx2{
@@ -828,9 +830,8 @@ span{
     }
 
     .flx3{
-        display: flex;
-        flex-direction: row;
         gap: 37px;
+        margin-right: 0px;
     }
 
     .pad{
@@ -1034,11 +1035,6 @@ span{
         height: 34px;
     }
 
-    #avatar{
-        width: auto;
-        height: 30px;
-    }
-
     #yanMenu{
         height: 150%;
     }
@@ -1169,12 +1165,6 @@ span{
         visibility: hidden;
     }
 
-    .flx3{
-        display: flex;
-        flex-direction: row;
-        gap: 37px;
-    }
-
     .pad{
         padding: 2% 4%;
         text-align: center;
@@ -1198,10 +1188,6 @@ span{
 
     .flx5{
         margin-left: 0;
-    }
-
-    .flx7{
-        justify-content: center;
     }
 
     .profile{
