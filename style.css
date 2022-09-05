@@ -927,6 +927,15 @@ span{
         gap: 10px;
     }
 
+    ol.flx2{
+        width: 0px;
+        height: 0px;
+        gap:  0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     .flxm{
         display: flex;
         flex-direction: row;
