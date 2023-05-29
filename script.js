@@ -1,23 +1,23 @@
-var sayac=1;
-var sepet=0;
+var sayac = 1;
+var sepet = 0;
 
-function art(){
+function art() {
     sayac++;
 }
 
-function azal(){
-    if(sayac>1){
+function azal() {
+    if (sayac > 1) {
         sayac--;
     }
 }
 
-function saydir(){
+function saydir() {
     var sayacim = document.getElementById("sayacim");
     sayacim.innerHTML = sayac;
 }
 saydir();
 
-function sepetsayi(){
+function sepetsayi() {
     var sepsayi = document.getElementById("sepsay");
     sepsayi.innerHTML = sayac;
     sepsayi.classList.add("vis");
@@ -75,34 +75,34 @@ function im4v() {
 }
 
 var subMenu = document.getElementById("subMenu");
-  function toggleMenu() {
-  subMenu.classList.toggle("open-menu");
-  subMenu2.classList.remove("open-menu2");
+function toggleMenu() {
+    subMenu.classList.toggle("open-menu");
+    subMenu2.classList.remove("open-menu2");
 
 }
 
 var subMenu2 = document.getElementById("subMenu2");
-  function toggleMenu2() {
-  subMenu2.classList.toggle("open-menu2");
-  subMenu.classList.remove("open-menu");
+function toggleMenu2() {
+    subMenu2.classList.toggle("open-menu2");
+    subMenu.classList.remove("open-menu");
 }
 
-function deneme(){
+function deneme() {
     subMenu.classList.remove("open-menu");
     subMenu2.classList.remove("open-menu2");
 }
 
-function sepetekle(){
+function sepetekle() {
     sepet = sayac;
 }
 
-function eklesepet(){
-    var fiyat = sayac*125;
+function eklesepet() {
+    var fiyat = sayac * 125;
     var sepetic = document.getElementById("cartsepet");
-    sepetic.innerHTML = '<div class="flx"><img id="sepimg" src="images/image-product-1-thumbnail.jpg"><div class="flxcs"><p>Fall Limited Edition Sneakers</p>  <p>$125 x '+sayac+' <span>$'+fiyat+'</span></p> </div><img onclick="silsepet()" id="cop" src="images/icon-delete.svg"></div>';
+    sepetic.innerHTML = '<div class="flx"><img id="sepimg" src="images/image-product-1-thumbnail.jpg"><div class="flxcs"><p>Fall Limited Edition Sneakers</p>  <p>$125 x ' + sayac + ' <span>$' + fiyat + '</span></p> </div><img onclick="silsepet()" id="cop" src="images/icon-delete.svg"></div>';
 }
 
-function silsepet(){
+function silsepet() {
     var sepetic2 = document.getElementById("cartsepet");
     sepetic2.innerHTML = '<p>Your cart is empty</p>';
     var sepsayi = document.getElementById("sepsay");
@@ -111,7 +111,7 @@ function silsepet(){
     saydir();
 }
 
-function menuac(){
+function menuac() {
     var menuYan = document.getElementById("yanMenu");
     var badi = document.getElementById("abc");
     menuYan.classList.toggle("ac");
@@ -120,37 +120,37 @@ function menuac(){
 
 var gecsay = 0;
 
-function saggecis(){
-    if(gecsay==3){
-        gecsay=0;
+function saggecis() {
+    if (gecsay == 3) {
+        gecsay = 0;
     }
-    else{
-        gecsay ++;
-    }
-    resimgec();
-}
-
-function solgecis(){
-    if(gecsay==-3){
-        gecsay=0;
-    }
-    else{
-        gecsay --;
+    else {
+        gecsay++;
     }
     resimgec();
 }
 
-function resimgec(){
-    if(gecsay==0){
+function solgecis() {
+    if (gecsay == -3) {
+        gecsay = 0;
+    }
+    else {
+        gecsay--;
+    }
+    resimgec();
+}
+
+function resimgec() {
+    if (gecsay == 0) {
         im1v();
     }
-    else if(gecsay==1 || gecsay==-3){
+    else if (gecsay == 1 || gecsay == -3) {
         im2v();
     }
-    else if(gecsay==2 || gecsay==-2){
-        im3v();         
+    else if (gecsay == 2 || gecsay == -2) {
+        im3v();
     }
-    else if(gecsay==3 || gecsay==-1){
-        im4v();      
+    else if (gecsay == 3 || gecsay == -1) {
+        im4v();
     }
 }
