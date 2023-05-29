@@ -775,6 +775,7 @@ span{
         display: flex;
         flex-direction: row;
         gap: 10px;
+        padding: 10px 0 0 0;
     }
 
     .flxm{
@@ -1167,11 +1168,11 @@ span{
     }
 
     .flx5{
-        visibility: hidden;
+        display: none;
     }
 
     .flx2{
-        visibility: hidden;
+        display: none;
     }
 
     .pad{
@@ -1193,10 +1194,6 @@ span{
     #bigimg{
         margin: 0;
         padding: 0;
-    }
-
-    .flx5{
-        margin-left: 0;
     }
 
     .profile{
